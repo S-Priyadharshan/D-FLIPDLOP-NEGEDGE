@@ -50,9 +50,9 @@ RegisterNumber: 212223240127
 */
 
 ```
-module Exp_08(D,clock,reset,Q,Qbar);
+module Exp_08(D,clock,reset,Q);
 input D,clock,reset;
-output reg Q,Qbar;
+output reg Q;
 always @(negedge clock)
 if(!reset)
 	Q <= 0;
@@ -67,7 +67,7 @@ endmodule
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
 
-![image](https://github.com/S-Priyadharshan/D-FLIPDLOP-NEGEDGE/assets/145854138/e8ef1d03-55d7-4add-84ca-23ccadad13ff)
+![image](https://github.com/S-Priyadharshan/D-FLIPDLOP-NEGEDGE/assets/145854138/5c2f7384-35c0-4be2-b979-b3ed33fb32e0)
 
 **RESULTS**
 Thus the program to implement a D flipflop using verilog and validating their functionality using their functional tables
